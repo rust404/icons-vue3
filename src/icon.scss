@@ -1,0 +1,26 @@
+.w-icon {
+  display: inline-flex;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  // vue3 会在没传入spin的情况下自动置为false，只有这样解决了
+  &[spin=true] {
+    animation: spin 1000ms infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
