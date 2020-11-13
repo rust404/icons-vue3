@@ -31,3 +31,10 @@ export default {
 ```
 
 其中上面的css文件可以选择项目入口处引入，这样就可以避免多次引入的麻烦
+
+此外，如果使用regular类型的icon，为了跟solid区分，引入时需要在后面追加Regular
+
+```js
+import CheckCircle from '@wing-ui/icons-vue/lib/CheckCircle'
+import CheckCircleRegular from '@wing-ui/icons-vue/lib/CheckCircleRegular'
+```
